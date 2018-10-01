@@ -1,7 +1,7 @@
 {
   "name": "unstated-hmr",
   "description": "Preserve containers' states across Hot-Module-Replacements.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
