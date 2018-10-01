@@ -23,7 +23,11 @@
     "type": "git",
     "url": "https://github.com/fabiospampinato/unstated-hmr.git"
   },
-  "keywords": [],
+  "keywords": [
+    "unstated",
+    "react",
+    "hmr"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.9.4",
