@@ -3,7 +3,7 @@
 
 import * as unstated from 'unstated';
 
-/* UNSTATED HMR */
+/* HMR */
 
 const HMR = {
   isEnabled: true,

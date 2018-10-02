@@ -26,7 +26,8 @@
   "keywords": [
     "unstated",
     "react",
-    "hmr"
+    "hmr",
+    "hot-module-replacement"
   ],
   "dependencies": {},
   "devDependencies": {
