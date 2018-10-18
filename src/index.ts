@@ -22,7 +22,9 @@ unstated['__SUPER_SECRET_CONTAINER_DEBUG_HOOK__']( container => {
 
     const oldState = HMR.containers[name].state;
 
-    Object.defineProperty ( container, 'state', {
+    Object.defineProperty ( container, 'state', { // This will work if the property is not set using `Object.defineProperty`
+      configurable: true,
+      enumerable: true,
       get () {
         return this.__state;
       },
@@ -30,6 +32,12 @@ unstated['__SUPER_SECRET_CONTAINER_DEBUG_HOOK__']( container => {
         this.__state = this.__state ? state : oldState;
       }
     });
+
+    setTimeout ( () => { // This will work if the property is set using `Object.defineProperty`
+      if ( container.state === oldState ) return;
+      container.state = oldState;
+      container._listeners.map ( listener => listener () );
+    }, 0 );
 
   }
 
