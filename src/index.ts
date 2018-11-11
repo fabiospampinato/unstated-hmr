@@ -47,4 +47,4 @@ unstated['__SUPER_SECRET_CONTAINER_DEBUG_HOOK__']( container => {
 
 /* EXPORT */
 
-export = Object.assign ( HMR, { default: HMR } );
+export default HMR;
